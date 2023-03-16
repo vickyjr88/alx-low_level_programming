@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+    printf("C is Awesome\n");
     return (0);
 }
