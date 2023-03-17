@@ -15,6 +15,5 @@ int main(void)
 		putchar(letters[a]);
 		a--;
 	}
-	putchar('\n');
 	return (0);
 }
