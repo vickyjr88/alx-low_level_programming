@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "_putchar.c"
 
 /**
  * main - Entry point
@@ -7,8 +7,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void word_display(void)
 {
-	printf("_putchar\n");
-	return (0);
+	char characters[] = "_putchar";
+	int x = 0;
+
+	while (x < 8)
+	{
+		_putchar(characters[x]);
+		x++;
+	}
+	_putchar('\n');
 }
