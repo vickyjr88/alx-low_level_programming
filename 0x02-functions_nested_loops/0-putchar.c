@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-void word_display(void)
+int main(void)
 {
 	char characters[] = "_putchar";
 	int x = 0;
@@ -18,4 +18,5 @@ void word_display(void)
 		x++;
 	}
 	_putchar('\n');
+	return (0);
 }
