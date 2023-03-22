@@ -61,17 +61,17 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(z + '0');
-				} else if (z > 0 && z < 100)
+				} else if (z > 9 && z < 100)
 				{
 					_putchar(' ');
 					print(z);
 				} else
 					print(z);
-				if (y < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+			}
+			if (y < n)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 			y++;
 		}
