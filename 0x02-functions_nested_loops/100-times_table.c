@@ -38,7 +38,7 @@ void print(int n)
 
 void print_times_table(int n)
 {
-	if (n > 0 && n < 16)
+	if (n > -1 && n < 16)
 	{
 		int bazu = n + 1;
 		int x = 0;
@@ -64,13 +64,13 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(z + '0');
-				}else if (z > 0 && z < 100)
+				} else if (z > 0 && z < 100)
 				{
 					_putchar(' ');
 					print(z);
 				} else
 				{
-					print(z);	
+					print(z);
 				}
 				if (y < n)
 				{
