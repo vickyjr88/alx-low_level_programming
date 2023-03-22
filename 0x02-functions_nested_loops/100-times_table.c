@@ -38,28 +38,25 @@ void print(int n)
 
 void print_times_table(int n)
 {
-	if (n > -1 && n < 16)
+	int bazu = n + 1;
+	int x = 0;
+
+	while (x < bazu)
 	{
-		int bazu = n + 1;
-		int x = 0;
+		int y = 0;
 
-		while (x < bazu)
+		if (bazu < 1 || bazu > 16)
+			break;
+
+		while (y < bazu)
 		{
-			int y = 0;
+			int z = y * x;
 
-			while (y < bazu)
+			if (z == 0 && y == 0)
+				_putchar('0');
+			else
 			{
-				int z = y * x;
-
-				if (z == 0)
-				{
-					if (y != 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-					}
-					_putchar('0');
-				} else if (z > 0 && z < 10)
+				if (z < 10)
 				{
 					_putchar(' ');
 					_putchar(' ');
@@ -69,18 +66,16 @@ void print_times_table(int n)
 					_putchar(' ');
 					print(z);
 				} else
-				{
 					print(z);
-				}
 				if (y < n)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
-				y++;
 			}
-			_putchar('\n');
-			x++;
+			y++;
 		}
+		_putchar('\n');
+		x++;
 	}
 }
