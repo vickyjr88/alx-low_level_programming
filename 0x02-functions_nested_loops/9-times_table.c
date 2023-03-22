@@ -22,9 +22,14 @@ void times_table(void)
 
 			if (z == 0)
 			{
+				if (y != 0)
+					_putchar(' ');
 				_putchar('0');
-				_putchar(',');
-				_putchar(' ');
+				if (y < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			} else if (z > 0 && z < 10)
 			{
 				_putchar(' ');
