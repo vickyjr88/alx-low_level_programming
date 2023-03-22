@@ -19,21 +19,27 @@ void times_table(void)
 		while (y < 10)
 		{
 			int z = y * x;
+
 			if (z < 10)
 			{
 				_putchar(' ');
-				_putchar(' ');
 				_putchar(z + '0');
 				if(y < 9)
+				{
 					_putchar(',');
+					_putchar(' ');
+				}
 			} else
 			{
 
-				_putchar(' ');
+
 				_putchar((z / 10) + '0');
 				_putchar((z % 10) + '0');
 				if (y < 9)
+				{
 					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			y++;
 		}
