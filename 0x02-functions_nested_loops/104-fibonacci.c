@@ -19,9 +19,10 @@ int main(void)
 
 	printf("%.0Lf, %.0Lf, ", n1, n2);
 
-	for (i = 2; i < number; ++i)
+	for (i = 3; i < number; ++i)
 	{
 		n3 = n1 + n2;
+
 		if (i == (number - 1))
 			printf("%.0Lf\n", n3);
 		else
