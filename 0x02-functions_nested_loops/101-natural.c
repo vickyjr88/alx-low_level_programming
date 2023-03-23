@@ -3,7 +3,7 @@
 
 /**
  * main - computes sum value
- * @n: The integer to be worked on
+ *
  * Computes the sum of number disible by either 3 or 5
  *
  * Return: 0
