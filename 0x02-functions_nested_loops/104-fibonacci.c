@@ -17,7 +17,7 @@ int main(void)
 	int i;
 	int number = 98;
 
-	printf("%Lf, %Lf, ", n1, n2);
+	printf("%.0Lf, %.0Lf, ", n1, n2);
 
 	for (i = 2; i < number; ++i)
 	{
