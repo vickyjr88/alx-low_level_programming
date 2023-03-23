@@ -15,7 +15,7 @@ int main(void)
 	long double  n2 = 2;
 	long double n3;
 	int i;
-	int number = 98;
+	int number = 99;
 
 	printf("%.0Lf, %.0Lf, ", n1, n2);
 
