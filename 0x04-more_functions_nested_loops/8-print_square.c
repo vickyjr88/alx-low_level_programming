@@ -21,8 +21,8 @@ void print_square(int n)
 				_putchar('#');
 				y++;
 			}
-
-			_putchar('\n');
+			if (x != (n - 1))
+				_putchar('\n');
 			x++;
 		}
 	}
